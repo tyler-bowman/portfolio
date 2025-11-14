@@ -1,19 +1,52 @@
 import React from "react";
+import headshot from "../assets/headshot.jpg";
 
 export default function Hero() {
-  return (
-    <section className="flex flex-col items-center justify-center text-center py-32 bg-gradient-to-b from-blue-50 to-white">
-      <h2 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Tyler</h2>
-      <p className="text-xl md:text-2xl text-gray-700 mb-6">
-        Software Engineer | AI & Machine Learning | Web Development
-      </p>
-      <a
-        href="#projects"
-        className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition"
-      >
-        View My Work
-      </a>
-    </section>
-  );
+        return (
+                <div
+                        className="w-full"
+                        style={{
+                                backgroundColor: "#0d1117",
+                                color: "white",
+                                minHeight: "60vh",                  // hero height
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                padding: "3rem 1rem"
+                        }}
+                >
+
+                        {/* Main content row */}
+                        <div className="flex flex-col md:flex-row items-center gap-10 max-w-5xl">
+
+                                {/* Left: circular image */}
+                                <img
+                                        src={headshot}
+                                        alt="Tyler Bowman headshot"
+                                        className="w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-blue-500 shadow-xl"
+                                />
+
+                                {/* Right: text content */}
+                                <div className="text-center md:text-left">
+                                        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                                                Hi, I'm Tyler
+                                        </h2>
+
+                                        <p className="text-xl md:text-2xl text-gray-300 mb-6">
+                                                Software Engineer | AI & Machine Learning | Web Development
+                                        </p>
+
+                                        <a
+                                                href="#projects"
+                                                className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition"
+                                        >
+                                                View My Work
+                                        </a>
+                                </div>
+
+                        </div>
+
+                </div>
+        );
 }
 
