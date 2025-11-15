@@ -31,7 +31,6 @@ export default function Hero() {
                                         <h2 className="text-4xl md:text-5xl font-bold mb-4">
                                                 Hi, I'm Tyler
                                         </h2>
-					<p className="text-red-500">TEST COLOR</p>
                                         <p className="text-lg md:text-xl text-gray-300 mb-6 leading-relaxed">
                                                 Software Engineer | AI & Machine Learning | Web Development
                                         </p>
