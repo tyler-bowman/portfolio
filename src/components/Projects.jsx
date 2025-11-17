@@ -8,7 +8,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 md:px-20">
+    <section id="projects" className="w-full min-h-screen flex items-center px-6 md:px-10 bg-gradient-to-b from-[#000000] to-[#8d8d8d] text-white">
       <h3 className="text-3xl font-bold text-center mb-12">Projects</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((proj, i) => (

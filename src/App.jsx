@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import About from "./components/About";
+import SeeweedSection from "./components/SeeweedSection";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <SeeweedSection />
       <Projects />
       <Footer />
     </div>

@@ -33,8 +33,10 @@ export default function About() {
         return (
                 <section
                         id="about"
-                        className="w-full py-20 px-6 md:px-10 bg-white text-black"
+			className="w-full min-h-screen flex items-center px-6 md:px-10 bg-gradient-to-b from-[#000000] to-[#8d8d8d] text-white"
+
                 >
+
                         {/* Wrapper for content */}
                         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
 
@@ -81,21 +83,21 @@ export default function About() {
                                                 About Me
                                         </h2>
 
-                                        <p className="text-gray-700 leading-relaxed">
+                                        <p className="text-white-500 leading-relaxed">
                                                 I'm Tyler Bowman, a software engineer with a passion for
                                                 machine learning, deep learning, and building high-impact
                                                 applications. I enjoy solving real-world problems, optimizing
                                                 systems, and bringing ideas to life through code.
                                         </p>
 
-                                        <p className="text-gray-700 leading-relaxed">
+                                        <p className="text-white-500 leading-relaxed">
                                                 My experience spans from developing custom AI models at Seeweed
                                                 (an underwater camera company) to building full-stack tools,
                                                 data pipelines, and more recently creating modern web
                                                 experiences using React and TailwindCSS.
                                         </p>
 
-                                        <p className="text-gray-700 leading-relaxed">
+                                        <p className="text-white-500 leading-relaxed">
                                                 Outside of work, I’m passionate about fitness, football, and
                                                 learning new technologies. I'm always pushing myself to grow as
                                                 a developer and person.

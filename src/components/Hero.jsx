@@ -17,7 +17,7 @@ export default function Hero() {
                 <img
                     src={headshot}
                     alt="Tyler Bowman"
-                    className="w-56 h-56 rounded-full border-[5px] border-black-500 object-cover shadow-xl"
+                    className="w-70 h-70 rounded-full border-[5px] border-black-500 object-cover shadow-xl"
                 />
 
                 {/* Text */}
