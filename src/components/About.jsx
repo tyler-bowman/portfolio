@@ -89,15 +89,15 @@ export default function About() {
                     <div className="space-y-6">
                         <h2 className="text-4xl font-bold">About Me</h2>
 
-                        <p className="leading-relaxed text-gray-200 text-lg">
+                        <p className="leading-relaxed text-gray-200 text-xl">
 			   I’m a Computer Science and Mathematics student at UW–La Crosse, graduating in May 2026 and planning to move back to Hudson, Wisconsin. I grew up in Spring Valley, a small and close-knit community that shaped my values and appreciation for the outdoors.	
                         </p>
 
-                        <p className="leading-relaxed text-gray-200 text-lg">
+                        <p className="leading-relaxed text-gray-200 text-xl">
 			   During my time at UW–La Crosse, I competed as a student-athlete on the football team, which strengthened my leadership, discipline, work ethic, and ability to balance demanding schedules. Outside of academics, I enjoy hunting, fishing, birding, and spending time in nature whenever I can.
                         </p>
 
-                        <p className="leading-relaxed text-gray-200 text-lg">
+                        <p className="leading-relaxed text-gray-200 text-xl">
 			   I currently work remotely for Seeweed Underwater Game Cameras, a Twin Cities company where I contribute to software development and machine learning projects for underwater imaging. Looking ahead, I’m excited to pursue a career in software engineering or continue expanding my work in AI and machine learning, where I can solve meaningful problems and build technology that makes an impact.
                         </p>
                     </div>
@@ -110,8 +110,8 @@ export default function About() {
 
                             {/* Letters */}
                             <div>
-                                <h4 className="text-2xl font-semibold mb-2">Letters of Recommendation</h4>
-                                <ul className="space-y-3 text-lg">
+                                <h4 className="text-3xl font-semibold mb-2">Letters of Recommendation</h4>
+                                <ul className="space-y-3 text-xl">
                                     <li>
                                         <a href={MitchLetter} download className="text-black hover:text-blue-500 underline">
                                             • Letter from Mitch (PDF)
@@ -127,11 +127,11 @@ export default function About() {
 
                             {/* Transcript */}
                             <div>
-                                <h4 className="text-2xl font-semibold mb-2">Transcript</h4>
+                                <h4 className="text-3xl font-semibold mb-2">Transcript</h4>
                                 <a
                                     href={TranscriptPDF}
                                     download
-                                    className="text-black hover:text-blue-500 underline text-lg"
+                                    className="text-black hover:text-blue-500 underline text-xl"
                                 >
                                     • Download Transcript (PDF)
                                 </a>
@@ -159,7 +159,7 @@ export default function About() {
                     <a
                         href={ResumePDF}
                         download
-                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg text-lg transition w-fit"
+                        className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg text-lg transition w-fit mt-4"
                     >
                         Download Resume
                     </a>
