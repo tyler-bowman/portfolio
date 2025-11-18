@@ -17,7 +17,7 @@ export default function Hero() {
                 <img
                     src={headshot}
                     alt="Tyler Bowman"
-                    className="w-70 h-70 rounded-full border-[5px] border-black-500 object-cover shadow-xl"
+                    className="w-100 h-100 rounded-full border-[5px] border-black-500 object-cover shadow-xl"
                 />
 
                 {/* Text */}
@@ -28,18 +28,16 @@ export default function Hero() {
                     </h1>
 
                     {/* Larger paragraph */}
-                    <p className="text-gray-300 max-w-xl text-xl leading-relaxed">
-                        Software Engineer specializing in Machine Learning,
-                        Computer Vision, and modern Web Development.
-                        I build intelligent systems with real-world impact.
+                    <p className="text-gray-300 max-w-xl text-2xl leading-relaxed">
+			Full-Stack Software Developer with experience in AI and Machine Learning, focusing on building modern web applications, backend services, and intelligent systems that deliver real value.
                     </p>
 
                     {/* Bigger button */}
                     <a
-                        href="#projects"
-                        className="inline-block mt-8 px-8 py-4 bg-blue-600 text-white rounded-lg text-lg font-medium hover:bg-blue-700 transition"
+                        href="#about"
+                        className="inline-block mt-8 px-8 py-4 bg-blue-600 text-white rounded-lg text-xl font-medium hover:bg-blue-700 transition"
                     >
-                        View My Work
+                        Learn More About Me
                     </a>
                 </div>
             </div>

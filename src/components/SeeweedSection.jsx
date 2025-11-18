@@ -1,53 +1,91 @@
+import React from "react";
+
+// Assets
+import SeeweedLogo from "../assets/Seeweed.jpg";
+import ModelPDF from "../assets/Model.pdf";
+
 export default function SeeweedSection() {
     return (
         <section
             id="seeweed"
-            className="relative w-full min-h-screen flex items-center px-6 md:px-10 overflow-hidden"
+            className="relative w-full min-h-screen text-white px-10 py-20"
         >
-            {/* Apply ML Grid Background */}
+            {/* Background */}
             <div className="ml-grid-bg"></div>
 
-            {/* Foreground Content */}
-            <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+            {/* GRID LAYOUT */}
+            <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[55%_45%] gap-16">
 
-                {/* Header */}
-                <h2 className="text-4xl font-bold mb-6">
-                    My Work at <span className="text-blue-600">Seeweed</span>
-                </h2>
+                {/* LEFT COLUMN — PDF VIEWER */}
+                <div className="flex flex-col w-full space-y-8">
 
-                <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto mb-12">
-                    During my internship at Seeweed — a company specializing in
-                    underwater trail cameras and AI-powered species detection —
-                    I developed custom machine learning models, improved
-                    training workflows, and delivered a production-ready solution
-                    under an extremely tight deadline.
-                </p>
-
-                {/* Highlight Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                    <div className="p-6 rounded-xl bg-white/10 backdrop-blur-sm shadow-lg hover:shadow-xl transition border border-white/10">
-                        <h3 className="text-xl font-semibold mb-3">Custom ML Training</h3>
-                        <p className="text-gray-300">
-                            Built & trained species-recognition models using TensorFlow,
-                            Vertex AI, and custom data pipelines.
-                        </p>
+                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[950px]">
+                        <iframe
+                            src={`${ModelPDF}#zoom=110`}
+                            className="w-full h-full rounded-lg bg-white shadow-lg"
+                            title="Model Comparison Chart"
+                        ></iframe>
                     </div>
 
-                    <div className="p-6 rounded-xl bg-white/10 backdrop-blur-sm shadow-lg hover:shadow-xl transition border border-white/10">
-                        <h3 className="text-xl font-semibold mb-3">Discovery Channel Project</h3>
-                        <p className="text-gray-300">
-                            Delivered a production-ready model in just 6 days —
-                            working late hours to overcome training issues.
+                    {/* Caption in Frosted Green Box */}
+                    <div className="bg-green-300/10 text-gray-200 p-5 rounded-xl backdrop-blur-sm 
+                                    border border-green-300/20 shadow-md text-center max-w-[85%] mx-auto">
+                        <p className="text-xl">
+				I created and presented this Excel chart to the Seeweed team to illustrate the improvements of the new model I developed compared to the original version, based on our 50-image validation set.
                         </p>
                     </div>
+                </div>
 
-                    <div className="p-6 rounded-xl bg-white/10 backdrop-blur-sm shadow-lg hover:shadow-xl transition border border-white/10">
-                        <h3 className="text-xl font-semibold mb-3">Real-World Impact</h3>
-                        <p className="text-gray-300">
-                            Increased species detection accuracy for a real underwater
-                            research product used globally.
-                        </p>
+                {/* RIGHT COLUMN — LOGO + ROLE + BULLETS */}
+                <div className="flex flex-col w-full space-y-10 -ml-10">
+
+                    {/* LOGO — aligned with top of PDF */}
+                    <div className="w-full flex flex-col items-center text-center space-y-4">
+
+                        <img
+                            src={SeeweedLogo}
+                            alt="Seeweed Logo"
+                            className="w-[50rem] max-w-full h-auto rounded-lg shadow-xl"
+                        />
+
+                        {/* Role + Website in same frosted box */}
+                        <div className="bg-green-200/30 backdrop-blur-sm border border-green-300/30 
+                                        px-6 py-4 rounded-lg shadow-md flex flex-col items-center space-y-1">
+                            <p className="text-3xl font-semibold text-black">
+                                Software Developer (AI) Intern — May 2024 to Present
+                            </p>
+                            <a
+                                href="https://seeweedcameras.com/"
+                                target="_blank"
+                                className="text-green-700 hover:text-green-900 text-2xl font-medium"
+                            >
+                                seeweedcameras.com
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Bullet Point Glass Card — Frosted Green */}
+                    <div className="bg-green-300/10 p-8 rounded-xl shadow-xl backdrop-blur-sm 
+                                    border border-green-300/20 max-w-[85%] mx-auto">
+                        <h3 className="text-4xl font-semibold mb-3">What I Work On</h3>
+
+                        <ul className="list-disc ml-6 space-y-3 text-2xl text-gray-200">
+                            <li>
+				Developed and deployed a custom AI model for Discovery Channel under a strict 6-day deadline, meeting specialized project requirements.
+                            </li>
+                            <li>
+				Collaborated with the Cornell Lab of Ornithology to refine dataset structure, species classification strategy, and test-set diversity.
+                            </li>
+                            <li>
+				Trained, evaluated, and deployed models using AWS SageMaker and Google Vertex AI, optimizing workflows for large-scale image datasets.
+                            </li>
+                            <li>
+				Automated preprocessing pipelines in Python to ensure dataset consistency and compliance with model training standards.
+                            </li>
+                            <li>
+				Processed and labeled thousands of underwater images to create high-quality datasets that improved overall model accuracy and reliability.
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
