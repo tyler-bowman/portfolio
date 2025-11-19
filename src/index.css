@@ -1,61 +1,46 @@
+:root {
+  font-size: 16px !important;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* ---- White → Black ML Background ---- */
 
-html {
-    font-size: 16px !important;
-    scroll-behavior: smooth;
-}
-
-/*  
-   FIXED VERSION OF BOTH BACKGROUNDS  
-   Prevents ANY overflow caused by pseudo-elements.
-*/
-
-.ml-grid-bg,
-.ml-grid-bg1 {
+.ml-grid-bg {
     position: absolute;
     inset: 0;
 
-    /* Critical overflow fix */
-    overflow: hidden;
-    overflow-x: hidden;
-    width: 100%;
-    max-width: 100vw;
+    /* White center fading into black */
+    /*background: radial-gradient(circle at 15% 50%, #000000 0%, #d3d3d3 100%);*/
+    /*background: radial-gradient(circle at 50% 35%, #87CEFA 0%, #000000 100%);*/
+    background: linear-gradient(to bottom, #d3d3d3 0%, #000000 100%);
 
+    overflow: hidden;
     z-index: 0;
 }
 
-/* === GRID PATTERN FOR ml-grid-bg (white→black) === */
-
-.ml-grid-bg {
-    background: linear-gradient(to bottom, #d3d3d3 0%, #000000 100%);
-}
-
-/* Grid lines & glow */
+/* Subtle dark grid */
 .ml-grid-bg::before,
 .ml-grid-bg::after {
     content: "";
     position: absolute;
     inset: 0;
 
-    /* Fix pseudo-element overflow */
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    /* Dark grey grid */
+    /* Dark grey grid lines */
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.10) 1px, transparent 1px);
 
     background-size: 60px 60px;
-    opacity: 0.35;
-}
+    opacity: 0.35; /* Faint but visible */
+} 
 
+/* Extra depth glow layer */
 .ml-grid-bg::after {
+   transform: none;
     background-image:
         linear-gradient(
             135deg,
@@ -71,18 +56,22 @@ html {
 /* ---- Black → White ML Background (Inverted Version) ---- */
 
 .ml-grid-bg1 {
+    position: absolute;
+    inset: 0;
+
+    /* Black fading into white (inverted from ml-grid-bg) */
     background: linear-gradient(to bottom, #000000 0%, #d3d3d3 100%);
+
+    overflow: hidden;
+    z-index: 0;
 }
 
+/* Subtle grid — same as before */
 .ml-grid-bg1::before,
 .ml-grid-bg1::after {
     content: "";
     position: absolute;
     inset: 0;
-
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
 
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px),
@@ -92,7 +81,10 @@ html {
     opacity: 0.35;
 }
 
+/* Extra depth glow — same but applied to inverted bg */
 .ml-grid-bg1::after {
+    transform: none;
+
     background-image:
         linear-gradient(
             135deg,
@@ -103,5 +95,9 @@ html {
 
     mix-blend-mode: screen;
     opacity: 0.6;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
