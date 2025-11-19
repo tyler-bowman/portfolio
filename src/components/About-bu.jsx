@@ -48,10 +48,7 @@ export default function About() {
     };
 
     return (
-        <section
-            id="about"
-            className="relative w-full min-h-screen text-white px-10 py-16 overflow-x-hidden"
-        >
+        <section id="about" className="relative w-full min-h-screen text-white px-10 py-16">
 
             {/* Background */}
             <div className="ml-grid-bg1"></div>
@@ -63,7 +60,7 @@ export default function About() {
                 <div className="flex flex-col space-y-12 w-full">
 
                     {/* Gallery */}
-                    <div className="w-full">
+                    <div className="w-full max-w-[90%]">
                         <div className="relative w-full h-80 lg:h-[600px] overflow-hidden rounded-xl shadow-xl mx-auto">
                             <img
                                 src={slides[currentIndex].image}
@@ -91,9 +88,9 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* About Me — Card */}
-                    <div className="backdrop-blur-sm bg-black/60 p-8 rounded-xl shadow-xl space-y-6 w-full">
-                        <h2 className="text-5xl font-bold">About Me</h2>
+                    {/* About Me — FROSTED BLACK BLUR CARD */}
+                    <div className="backdrop-blur-sm bg-black/60 p-8 rounded-xl shadow-xl space-y-6 max-w-[90%]">
+                        <h2 className="text-4xl font-bold">About Me</h2>
 
                         <p className="leading-relaxed text-white text-xl">
                             I’m a Computer Science and Mathematics student at UW–La Crosse, graduating in May 2026 and planning to move back to Hudson, Wisconsin. I grew up in Spring Valley, a small and close-knit community that shaped my values and appreciation for the outdoors.
@@ -103,6 +100,7 @@ export default function About() {
                             During my time at UW–La Crosse, I competed as a student-athlete on the football team, which strengthened my leadership, discipline, work ethic, and ability to balance demanding schedules. Outside of academics, I enjoy hunting, fishing, birding, and spending time in nature whenever I can.
                         </p>
 
+                        {/* UPDATED PARAGRAPH WITH LINK TO SEEWEED SECTION */}
                         <p className="leading-relaxed text-white text-xl">
                             I currently work remotely for{" "}
                             <a
@@ -116,7 +114,7 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* RIGHT COLUMN — PDF VIEWER */}
+                {/* RIGHT COLUMN — PDF VIEWER WITH TABS */}
                 <div className="flex flex-col w-full space-y-6">
 
                     {/* TAB BUTTONS */}
@@ -143,10 +141,10 @@ export default function About() {
                     </div>
 
                     {/* PDF VIEWER */}
-                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full min-h-[1065px] overflow-hidden">
+                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[1120px]">
                         <iframe
                             src={`${selectedPDF}#zoom=110`}
-                            className="w-full h-full max-w-full overflow-hidden rounded-lg bg-white shadow-lg"
+                            className="w-full h-full rounded-lg bg-white shadow-lg"
                             title="PDF Viewer"
                         ></iframe>
                     </div>
