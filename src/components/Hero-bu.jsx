@@ -17,19 +17,22 @@ export default function Hero() {
                 <img
                     src={headshot}
                     alt="Tyler Bowman"
-                    className="w-90 h-90 aspect-square rounded-full border-[3px] border-black object-cover shadow-2xl"
+                    className="w-85 h-85 aspect-square rounded-full border-[3px] border-black object-cover shadow-2xl"
                 />
 
                 {/* Text */}
                 <div>
+                    {/* Larger name */}
                     <h1 className="text-7xl font-bold text-white mb-5">
                         Hi, I'm Tyler
                     </h1>
 
+                    {/* Larger paragraph */}
                     <p className="text-white max-w-xl text-3xl leading-relaxed">
                         Full-Stack Software Developer with experience in AI and Machine Learning.
                     </p>
 
+                    {/* Bigger button */}
                     <a
                         href="#about"
                         className="inline-block mt-8 px-8 py-4 bg-blue-600 text-white rounded-xl text-2xl font-semibold shadow-lg hover:bg-blue-700 transition"
