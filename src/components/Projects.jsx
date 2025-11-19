@@ -33,7 +33,7 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="relative w-full min-h-screen px-6 md:px-10 py-24 text-white"
+            className="relative w-full min-h-screen px-6 md:px-10 py-10 text-white"
         >
             {/* Background */}
             <div className="ml-grid-bg1"></div>
@@ -42,9 +42,9 @@ export default function Projects() {
             <div className="relative z-10 w-full max-w-8xl mx-auto">
 
                 {/* Frosted Title Box */}
-                <div className="w-full flex justify-center mb-20">
-                    <div className="bg-white/10 backdrop-blur-md border border-white/10 px-80 py-8 rounded-2xl shadow-xl text-center">
-                        <h3 className="text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow-xl">
+                <div className="w-full flex justify-center mb-10">
+                    <div className="bg-white/10 backdrop-blur-md border border-white/10 px-40 py-6 rounded-2xl shadow-xl text-center">
+                        <h3 className="text-xl md:text-4xl font-extrabold tracking-wide drop-shadow-xl">
                             My Projects
                         </h3>
                     </div>
@@ -62,7 +62,7 @@ export default function Projects() {
                                        flex flex-col min-h-[480px]"
                         >
                             {/* Image */}
-                            <div className="w-full h-110 overflow-hidden">
+                            <div className="w-full h-100 overflow-hidden">
                                 <img
                                     src={proj.image}
                                     alt={proj.title}
@@ -71,19 +71,19 @@ export default function Projects() {
                             </div>
 
                             {/* Card Body */}
-                            <div className="p-8 flex flex-col flex-1">
-                                <h4 className="text-4xl font-bold mb-3 text-white">
+                            <div className="p-6 flex flex-col flex-1">
+                                <h4 className="text-xl font-bold mb-3 text-white">
                                     {proj.title}
                                 </h4>
 
-                                <p className="text-gray-200 text-2xl leading-relaxed mb-6 flex-1">
+                                <p className="text-gray-200 text-m leading-relaxed mb-6 flex-1">
                                     {proj.description}
                                 </p>
 
                                 <a
                                     href={proj.link}
                                     target="_blank"
-                                    className="text-blue-400 hover:text-blue-500 text-2xl font-semibold mt-auto"
+                                    className="text-blue-400 hover:text-blue-500 text-lg font-semibold mt-auto"
                                 >
                                     View on GitHub →
                                 </a>

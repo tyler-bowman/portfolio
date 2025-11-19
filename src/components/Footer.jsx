@@ -4,16 +4,16 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-white py-10 px-6 md:px-20 text-center shadow-inner"
+      className="bg-white py-5 px-6 md:px-20 text-center shadow-inner"
     >
-      <h4 className="text-4xl font-bold mb-6">Get in Touch</h4>
+      <h4 className="text-xl font-bold mb-6">Get in Touch</h4>
 
-      <p className="mb-10 text-3xl">
+      <p className="mb-6 text-lg">
         Email: <span className="font-semibold">tylerjackb32@gmail.com</span> | Phone:{" "}
         <span className="font-semibold">(715) 928-1532</span>
       </p>
 
-      <div className="flex justify-center space-x-10 text-3xl">
+      <div className="flex justify-center space-x-10 text-lg">
         <a
           href="https://github.com/tyler-bowman"
           target="_blank"
@@ -30,7 +30,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <p className="mt-10 text-gray-400 text-xl">&copy; 2025 Tyler Bowman</p>
+      <p className="mt-6 text-gray-400 text-lg">&copy; 2025 Tyler Bowman</p>
     </footer>
   );
 }

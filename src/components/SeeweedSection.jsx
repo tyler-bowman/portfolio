@@ -8,7 +8,7 @@ export default function SeeweedSection() {
     return (
         <section
             id="seeweed"
-            className="relative w-full min-h-screen text-white px-10 py-20"
+            className="relative w-full min-h-screen text-white px-10 py-10"
         >
             {/* Background */}
             <div className="ml-grid-bg"></div>
@@ -21,7 +21,7 @@ export default function SeeweedSection() {
 
                     <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[600px]">
                         <iframe
-                            src={`${ModelPDF}#zoom=80`}
+                            src={`${ModelPDF}#zoom=75`}
                             className="w-full h-full rounded-lg bg-white shadow-lg"
                             title="Model Comparison Chart"
                         ></iframe>

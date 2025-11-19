@@ -48,7 +48,7 @@ export default function About() {
     };
 
     return (
-        <section id="about" className="relative w-full min-h-screen text-white px-10 py-16">
+        <section id="about" className="relative w-full min-h-screen text-white px-10 py-10">
 
             {/* Background */}
             <div className="ml-grid-bg1"></div>
@@ -57,7 +57,7 @@ export default function About() {
             <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-16">
 
                 {/* LEFT COLUMN */}
-                <div className="flex flex-col space-y-12 w-full">
+                <div className="flex flex-col space-y-4 w-full">
 
                     {/* Gallery */}
                     <div className="w-full max-w-[90%]">
@@ -89,7 +89,7 @@ export default function About() {
                     </div>
 
                     {/* About Me — FROSTED BLACK BLUR CARD */}
-                    <div className="backdrop-blur-sm bg-black/60 p-3 rounded-xl shadow-xl space-y-6 max-w-[90%]">
+                    <div className="backdrop-blur-sm bg-black/60 p-2 rounded-xl shadow-xl space-y-3 max-w-[90%]">
                         <h2 className="text-xl font-bold">About Me</h2>
 
                         <p className="leading-relaxed text-white text-m">
@@ -115,10 +115,10 @@ export default function About() {
                 </div>
 
                 {/* RIGHT COLUMN — PDF VIEWER WITH TABS */}
-                <div className="flex flex-col w-full space-y-6">
+                <div className="flex flex-col w-full space-y-3">
 
                     {/* TAB BUTTONS */}
-                    <div className="flex space-x-4 bg-white/10 px-4 py-3 rounded-xl shadow-md w-full">
+                    <div className="flex space-x-4 bg-white/10 px-4 py-1 rounded-xl shadow-md w-full">
                         {[
                             { label: "Resume", file: ResumePDF },
                             { label: "Letter from Mitch G", file: MitchLetter },
@@ -141,7 +141,7 @@ export default function About() {
                     </div>
 
                     {/* PDF VIEWER */}
-                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[750px]">
+                    <div className="bg-white/10 p-2 rounded-xl shadow-2xl w-full h-[705px]">
                         <iframe
                             src={`${selectedPDF}#zoom=75`}
                             className="w-full h-full rounded-lg bg-white shadow-lg"
