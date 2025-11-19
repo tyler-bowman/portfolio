@@ -48,7 +48,7 @@ export default function About() {
     };
 
     return (
-        <section id="about" className="relative w-full min-h-screen text-white px-10 py-10">
+        <section id="about" className="relative w-full min-h-screen text-white px-10 py-5">
 
             {/* Background */}
             <div className="ml-grid-bg1"></div>
@@ -61,27 +61,27 @@ export default function About() {
 
                     {/* Gallery */}
                     <div className="w-full max-w-[90%]">
-                        <div className="relative w-[100%] h-300 lg:h-[300px] overflow-hidden rounded-xl shadow-xl mx-auto">
+                        <div className="relative w-[100%] h-300 lg:h-[325px] overflow-hidden rounded-xl shadow-xl mx-auto">
                             <img
                                 src={slides[currentIndex].image}
                                 alt="Gallery slide"
                                 className="w-full h-full object-cover"
                             />
 
-                            <p className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/60 text-white text-lg px-3 py-1 rounded">
+                            <p className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/60 text-white text-sm px-3 py-1 rounded">
                                 {slides[currentIndex].caption}
                             </p>
 
                             <button
                                 onClick={goPrev}
-                                className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-6 py-4 rounded-full hover:bg-black/60"
+                                className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-1.5 rounded-full hover:bg-black/60"
                             >
                                 ◀
                             </button>
 
                             <button
                                 onClick={goNext}
-                                className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-6 py-4 rounded-full hover:bg-black/60"
+                                className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-1.5 rounded-full hover:bg-black/60"
                             >
                                 ▶
                             </button>
@@ -141,7 +141,7 @@ export default function About() {
                     </div>
 
                     {/* PDF VIEWER */}
-                    <div className="bg-white/10 p-2 rounded-xl shadow-2xl w-full h-[705px]">
+                    <div className="bg-white/10 p-2 rounded-xl shadow-2xl w-full h-[730px]">
                         <iframe
                             src={`${selectedPDF}#zoom=75`}
                             className="w-full h-full rounded-lg bg-white shadow-lg"

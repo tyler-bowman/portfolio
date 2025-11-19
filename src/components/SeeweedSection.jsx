@@ -8,7 +8,7 @@ export default function SeeweedSection() {
     return (
         <section
             id="seeweed"
-            className="relative w-full min-h-screen text-white px-10 py-10"
+            className="relative w-full min-h-screen text-white px-10 py-5"
         >
             {/* Background */}
             <div className="ml-grid-bg"></div>
@@ -17,9 +17,9 @@ export default function SeeweedSection() {
             <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[55%_45%] gap-16">
 
                 {/* LEFT COLUMN — PDF VIEWER */}
-                <div className="flex flex-col w-full space-y-8">
+                <div className="flex flex-col w-full space-y-7">
 
-                    <div className="bg-white/10 p-5 rounded-xl shadow-2xl w-full h-[600px]">
+                    <div className="bg-white/30 p-5 rounded-xl shadow-2xl w-full h-[620px]">
                         <iframe
                             src={`${ModelPDF}#zoom=75`}
                             className="w-full h-full rounded-lg bg-white shadow-lg"
@@ -37,21 +37,21 @@ export default function SeeweedSection() {
                 </div>
 
                 {/* RIGHT COLUMN — LOGO + ROLE + BULLETS */}
-                <div className="flex flex-col w-full space-y-5 -ml-10">
+                <div className="flex flex-col w-full space-y-7 -ml-10">
 
                     {/* LOGO — aligned with top of PDF */}
-                    <div className="w-full flex flex-col items-center text-center space-y-4">
+                    <div className="w-full flex flex-col items-center text-center space-y-7">
 
                         <img
                             src={SeeweedLogo}
                             alt="Seeweed Logo"
-                            className="w-[30rem] max-w-full h-auto rounded-lg shadow-xl"
+                            className="w-[34rem] max-w-full h-auto rounded-lg shadow-xl"
                         />
 
                         {/* Role + Website in same frosted box */}
                         <div className="bg-green-200/30 backdrop-blur-sm border border-green-300/30 
                                         px-6 py-4 rounded-lg shadow-md flex flex-col items-center space-y-1">
-                            <p className="text-lg font-semibold text-black">
+                            <p className="text-xl font-semibold text-black">
                                 Software Developer (AI) Intern — May 2024 to Present
                             </p>
                             <a
@@ -66,7 +66,7 @@ export default function SeeweedSection() {
 
                     {/* Bullet Point Glass Card — Frosted Green */}
                     <div className="bg-green-300/10 p-4 rounded-xl shadow-xl backdrop-blur-sm 
-                                    border border-green-300/20 max-w-[85%] mx-auto">
+                                    border border-green-300/20 max-w-[90%] mx-auto">
                         <h3 className="text-lg font-semibold mb-3">What I Work On</h3>
 
                         <ul className="list-disc ml-6 space-y-3 text-m text-gray-200">
